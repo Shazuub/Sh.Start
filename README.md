@@ -1,2 +1,3 @@
-# Sh.Start
- Start.bat for FiveM server
+Start.bat by Shazuub 
+
+Preview: https://streamable.com/lyeyph
