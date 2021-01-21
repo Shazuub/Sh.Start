@@ -1,13 +1,12 @@
 Start.bat by Shazuub 
 
-VERSION ACTUELLE 1.2
+VERSION ACTUELLE 1.3
 
 Preview: https://streamable.com/ar83um
 
 Base Template Dispo le 26/01
 
-Ajouts d'un system pour vérifier si vous avez la dernière version du Start
+Ajouts de 4 couleurs
 
 Prochaine mises à jour :
-    couleur supplémentaire 
     mises à jour automatique au lencement
