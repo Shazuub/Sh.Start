@@ -1,5 +1,5 @@
 :menu
-@echo off & color 0f & cls & title Sh.Start 1.3 : https://discord.gg/rPNRUMRZrU
+@echo off & color 0f & cls & title Sh.Start 2.0 : https://discord.gg/mBvPTpmeaC
 color A
 echo	Programme de lancement de serveurs FiveM
 echo.
@@ -16,9 +16,7 @@ echo.
 set /p answer="Quelle option choisissez-vous ? > "
 if /i {%ANSWER%}=={1} (goto :start)
 if /i {%ANSWER%}=={2} (goto :cache)
-if /i {%ANSWER%}=={3} (goto :template)
 if /i {%ANSWER%}=={4} (goto :backup)
-if /i {%ANSWER%}=={5} (goto :option)
 goto :menu
 exit
 
@@ -68,154 +66,6 @@ echo Backup cree avec succes !
 ping localhost -n 5 >nul
 goto :menu
 
-:template
-@cls
-color A
-echo	Programme de lancement de serveurs FiveM
-echo.
-echo.
-echo.
-echo Telechargement en cours...
-ping localhost -n 8 >nul
-powershell -Command "Invoke-WebRequest https://saphior.fr/download/basetemplate.rar -OutFile BaseTemplate.rar"
-echo.
-echo.
-echo.
-echo Telechargement cree avec succes !
-ping localhost -n 5 >nul
-exit
-
-:option
-@cls
-color A
-echo	Programme de lancement de serveurs FiveM
-echo.
-echo.
-echo.
-echo	[0] Console Rouge
-echo	[1] Console Vert
-echo	[2] Console Bleu
-echo	[3] Console Blanc
-echo	[4] Console Cyan
-echo	[5] Console Gris
-echo	[6] Console Jaune
-echo	[7] Console Violet
-echo.
-echo	[8] Verifier la mise a Jours
-echo.
-echo	[9] Retour au Menu
-echo.
-echo.
-echo.
-set /p answer="Quelle option choisissez-vous ? > "
-if /i {%ANSWER%}=={0} (goto :rouge)
-if /i {%ANSWER%}=={1} (goto :vert)
-if /i {%ANSWER%}=={2} (goto :bleu)
-if /i {%ANSWER%}=={3} (goto :blanc)
-if /i {%ANSWER%}=={4} (goto :cyan)
-if /i {%ANSWER%}=={5} (goto :gris)
-if /i {%ANSWER%}=={6} (goto :jaune)
-if /i {%ANSWER%}=={7} (goto :violet)
-if /i {%ANSWER%}=={8} (goto :update)
-if /i {%ANSWER%}=={9} (goto :menu)
-exit
-
-:rouge
-@cls
-color A
-echo	Programme de lancement de serveurs FiveM
-echo.
-echo.
-echo.
-echo Telechargement en cours...
-ping localhost -n 8 >nul
-powershell -Command "Invoke-WebRequest https://saphior.fr/download/rouge.bat -OutFile Start.bat"
-exit
-
-:vert
-@cls
-color A
-echo	Programme de lancement de serveurs FiveM
-echo.
-echo.
-echo.
-echo Telechargement en cours...
-ping localhost -n 8 >nul
-powershell -Command "Invoke-WebRequest https://saphior.fr/download/vert.bat -OutFile Start.bat"
-exit
-
-:bleu
-@cls
-color A
-echo	Programme de lancement de serveurs FiveM
-echo.
-echo.
-echo.
-echo Telechargement en cours...
-ping localhost -n 8 >nul
-powershell -Command "Invoke-WebRequest https://saphior.fr/download/bleu.bat -OutFile Start.bat"
-exit
-
-:blanc
-@cls
-color A
-echo	Programme de lancement de serveurs FiveM
-echo.
-echo.
-echo.
-echo Telechargement en cours...
-ping localhost -n 8 >nul
-powershell -Command "Invoke-WebRequest https://saphior.fr/download/blanc.bat -OutFile Start.bat"
-exit
-
-:jaune
-@cls
-color A
-echo	Programme de lancement de serveurs FiveM
-echo.
-echo.
-echo.
-echo Telechargement en cours...
-ping localhost -n 8 >nul
-powershell -Command "Invoke-WebRequest https://saphior.fr/download/jaune.bat -OutFile Start.bat"
-exit
-
-:violet
-@cls
-color A
-echo	Programme de lancement de serveurs FiveM
-echo.
-echo.
-echo.
-echo Telechargement en cours...
-ping localhost -n 8 >nul
-powershell -Command "Invoke-WebRequest https://saphior.fr/download/violet.bat -OutFile Start.bat"
-exit
-
-:gris
-@cls
-color A
-echo	Programme de lancement de serveurs FiveM
-echo.
-echo.
-echo.
-echo Telechargement en cours...
-ping localhost -n 8 >nul
-powershell -Command "Invoke-WebRequest https://saphior.fr/download/gris.bat -OutFile Start.bat"
-exit
-
-:cyan
-@cls
-color A
-echo	Programme de lancement de serveurs FiveM
-echo.
-echo.
-echo.
-echo Telechargement en cours...
-ping localhost -n 8 >nul
-powershell -Command "Invoke-WebRequest https://saphior.fr/download/cyan.bat -OutFile Start.bat"
-exit
-
 :cache
 @cls
 color A
@@ -235,15 +85,4 @@ echo.
 echo.
 echo.
 goto :menu
-
-:update
-@cls
-color A
-echo	Programme de lancement de serveurs FiveM
-echo.
-echo.
-echo.
-echo Telechargement en cours...
-ping localhost -n 8 >nul
-powershell -Command "Invoke-WebRequest https://saphior.fr/download/vert.bat -OutFile Start.bat"
 exit
